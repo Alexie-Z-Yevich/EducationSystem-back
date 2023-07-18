@@ -33,11 +33,11 @@ public class AuthController {
 
     @GetMapping("/captcha")
     public Result captcha() throws IOException {
-//        String key = UUID.randomUUID().toString();
-//        String code = producer.createText();
+        String key = UUID.randomUUID().toString();
+        String code = producer.createText();
 
-        String key = "aaaaa";
-        String code = "11111";
+//        String key = "aaaaa";
+//        String code = "11111";
 
         BufferedImage image = producer.createImage(code);
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
