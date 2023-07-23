@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8083
 spring:
   #  mvc:
   #    hidden-method:
@@ -17,7 +17,7 @@ spring:
 #      name: user
 #      password: 111111
 mybatis-plus:
-  mapper-locations: classpath*:/mapper/**Mapper.xml
+  mapper-locations: classpath*:/system/**Mapper.xml
 admin:
   jwt:
     header: Authorization
